@@ -1,0 +1,678 @@
+@charset "UTF-8";
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css");
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/onts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/onts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); }
+
+/* 전체 */
+html {
+  font-size: 16px; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all; 
+  font-family : Nanum Gothic;}
+
+.page {
+  box-sizing: border-box;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.about-dable > .page:nth-child(1) {
+  background-size: cover;
+  background-position: center; }
+
+.about-dable-background {
+  background-size: cover;
+  background-position: center; }
+
+h3 {
+  font-size: 55px;
+  line-height: 1.3em;
+  font-family: Nanum Gothic;
+  font-weight: 700;
+  color: #41434a; 
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);}
+  @media (max-width: 450px) {
+    h3 {
+      font-size: 38.5px; } }
+
+h4 {
+  font-size: 35px;
+  font-family: Nanum Gothic;
+  line-height: 1.3em;
+  font-weight: 700; }
+
+.description {
+  font-size: 23px;
+  line-height: 1.5em;
+  padding: 0 0px 80px 0px;
+  color: #41434a;
+  letter-spacing: -2.4px; }
+
+h3, h4 {
+  letter-spacing: -1.8px; }
+
+.blue {
+  color: #81c6ff; }
+
+.lightblue {
+  color: #c5e6ff; }
+
+/* 헤더 */
+header {
+  margin: 0 0px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: poppins; 
+  background-color:#444;}
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto; }
+
+.logo {
+  flex-shrink: 0; }
+  .logo img {
+    height: 100%;
+    max-height: 60px; 
+    padding : 20px 0 20px 20px;}
+    @media (max-width: 620px) {
+      .logo img {
+        max-height: 60px; } }
+
+.menus {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 12px 50px 8px 30px; }
+  .menus .menu {
+    flex-grow: 1;
+    padding: 0;
+    position: relative;
+    text-align: center; }
+    .menus .menu::after {
+      content: "•";
+      position: absolute;
+      right: -7px;
+      top: 10px;
+      color: lightgray; }
+    .menus .menu:last-child::after {
+      content: ""; }
+    .menus .menu a {
+      color: white;
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      padding: 10px 20px; }
+      .menus .menu a:hover {
+        text-decoration: underline; }
+
+.mobile-menu-btn {
+  flex-shrink: 0; }
+  .mobile-menu-btn button {
+    font-size: 25px;
+    padding: 5px;
+    border: 0;
+    background: none;
+    display: none; }
+    .mobile-menu-btn button::after {
+      content: "\f0c9";
+      font-family: 'FontAwesome';
+      color: #222; }
+    .mobile-menu-btn button.on::after {
+      content: "\f00d"; }
+
+/* about dable */
+.title-page {
+  position: relative;
+  padding: 90px 0; }
+  .title-page h3 {
+    color: white;
+    padding-bottom: 24px; }
+  .title-page .iframe-wrap {
+    border: 1px solid #52afe1;
+    width: calc(30% + 334px);
+    padding-bottom: calc(16.8% + 189px);
+    height: 0;
+    position: relative;
+    margin-bottom: 0px; }
+  .title-page iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .title-page .description {
+    padding-bottom: 71px; }
+
+.network-page {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  padding: 172px 0 139px 0; }
+  .network-page .left {
+    max-width: 500px;
+    padding: 0px 100px 80px 0; }
+  .network-page .right {
+    max-width: 600px;
+    width: 100%; }
+  .network-page .button {
+  color:#41434A;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-color:#ffc600;
+  font-size:25px;
+  padding:25px;
+  border-radius:1em;
+  font-weight:bold;}
+  .network-page .form-shortcut {
+    display: flex;
+    text-decoration: none;
+    width: 270px;
+    height: 80px;
+    font-size: 28px;
+    letter-spacing: -1.3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+    background-color: #ffc600;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1358a2', endColorstr='#29b0c5', GradientType=0);
+    justify-content: center;
+    align-items: center; 
+    font-weight : bold;} 
+    .network-page .form-shortcut:active {
+      box-shadow: none;
+      position: relative;
+      top: 2px; }
+    @media (max-width: 450px) {
+      .network-page .form-shortcut {
+        width: 225px;
+        height: 70px; } }
+    @media (max-width: 450px) {
+      .network-page .form-shortcut {
+        margin: 0 auto;
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 0px; } }
+      .network-page .deck-download {
+        background-color : #41434a;
+        margin-bottom : 30px;
+      }
+  .network-page h3 {
+    font-size: 45px;
+    padding-bottom: 25px; }
+    @media (max-width: 450px) {
+      .network-page h3 {
+        font-size: 30px; } }
+  @media (max-width: 620px) {
+    .network-page .right {
+      order: -1; }
+    .network-page .left {
+      padding-right: 0;
+      padding-bottom: 40px; } }
+
+.ad-page {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left; 
+  background-color:#f2f2f2;
+  padding : 100px 10px;
+}
+  .ad-page .left {
+    padding: 100px 0px 80px 130px;
+    max-width: 450px;
+    width: 100%; }
+    .ad-page .left h3 {
+      font-size: 45px;
+      padding-bottom: 40px; }
+      @media (max-width: 450px) {
+        .ad-page .left h3 {
+          font-size: 25px; } }
+  .ad-page img {
+    max-width: 450px;
+    width: 100%; 
+    margin : 0px 0px 0px 0px;
+  }
+
+ .ad-page .button {
+    color:white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color:#41434A;
+    font-size:25px;
+    padding:25px;
+    border-radius:1em;
+ }
+
+
+
+/*데이블 네이티브 애드 장점*/
+.benefits-page {
+  padding: 150px 0 132px 0; 
+  background-color:#ffc600; }
+  .benefits-page h3 {
+    font-size: 45px;
+    padding-bottom: 70px; }
+    @media (max-width: 450px) {
+      .benefits-page h3 {
+        font-size: 28px; } }
+    @media (max-width: 620px) {
+      .benefits-page h3 {
+        width: 70%;
+        padding-bottom: 40px; } }
+  .benefits-page h4 {
+    font-size: 29px;
+    padding: 0px 0 15px 0;
+    position: relative;
+    z-index: 1; }
+  .benefits-page .benefits {
+    text-align: left;
+    max-width: 1232px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .benefits-page .benefits .network {
+      background-color: white;
+      box-shadow:0 5px 10px rgba(0, 0, 0, 0.3); }
+    .benefits-page .benefits .optimization {
+      background-color: white;
+      box-shadow:0 5px 10px rgba(0, 0, 0, 0.3); }
+    .benefits-page .benefits .targetting {
+      background-color: white;
+      box-shadow:0 5px 10px rgba(0, 0, 0, 0.3); }
+    .benefits-page .benefits .operation {
+      background-color: white;
+      box-shadow:0 5px 10px rgba(0, 0, 0, 0.3); }
+    @media (max-width: 620px) {
+      .benefits-page .benefits {
+        border-top: 1px solid #ddd; } }
+  .benefits-page .benefit {
+    width: 25%;
+    min-width: 200px;
+    box-sizing: border-box;
+    background-size: cover;
+    position: relative;
+    padding: 49px 30px 218px 30px;
+    box-shadow: 0 3px 5px lightgray; }
+    .benefits-page .benefit:nth-child(2n-1) {
+      color: #41434A; }
+      .benefits-page .benefit:nth-child(2n-1)::before {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+         }
+    .benefits-page .benefit p {
+      line-height: 1.4em;
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+      letter-spacing: -1.5px; }
+    .benefits-page .benefit img {
+      position: absolute;
+      z-index: 1; }
+    @media (max-width: 620px) {
+      .benefits-page .benefit {
+        min-width: 50%;
+        padding: 49px 15px 150px 15px; } }
+  .benefits-page .network img {
+    width: 44%;
+    right: 32px;
+    bottom: 43px; }
+  .benefits-page .targetting img {
+    width: 34.4%;
+    right: 30px;
+    bottom: 48px; }
+  .benefits-page .optimization img {
+    width: 44.4%;
+    right: 30px;
+    bottom: 48px; }
+  .benefits-page .operation img {
+    width: 32.1%;
+    right: 36px;
+    bottom: 55px; }
+
+/*언론 보도자료  페이지*/
+.news-page {
+  padding: 150px 0 132px 0; }
+  .news-page h3 {
+    font-size: 45px;
+    padding-bottom: 70px; }
+    @media (max-width: 450px) {
+      .news-page h3 {
+        font-size: 28px; } }
+    @media (max-width: 620px) {
+      .news-page h3 {
+        width: 70%;
+        padding-bottom: 40px; } }
+  .news-page h4 {
+    font-size: 29px;
+    padding: 0px 0 15px 0;
+    position: relative;
+    z-index: 1; }
+  .news-page .news {
+    text-align: left;
+    max-width: 1232px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    cursor: pointer;}
+    .news-page .news .network {
+      }
+    .news-page .news .optimization {
+     }
+    .news-page .news .targetting {
+      background-color: white; }
+    .news-page .news .operation {
+      background-color: white; }
+    @media (max-width: 620px) {
+      .news-page .news {
+        border-top: 1px solid #ddd; } }
+  .news-page .one-news {
+    width: 25%;
+    min-width: 200px;
+    box-sizing: border-box;
+    background-size: cover;
+    position: relative;
+    padding: 49px 30px 218px 30px;
+    box-shadow: 0 3px 5px lightgray; }
+    .news-page .one-news:nth-child(2n-1) {
+      color: #41434A; }
+      .news-page .one-news:nth-child(2n-1)::before {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        opacity: 0.5; }
+    .news-page .one-news p {
+      line-height: 1.4em;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+      letter-spacing: -1.5px; }
+    .news-page .one-news img {
+      position: absolute;
+      z-index: 1; }
+    @media (max-width: 620px) {
+      .news-page .one-news {
+        min-width: 50%;
+        padding: 49px 15px 150px 15px; } }
+  .news-page .network img {
+    width: 60%;
+    left: 32px;
+    bottom: 43px; }
+  .news-page .targetting img {
+    width: 55%;
+    left: 30px;
+    bottom: 48px; }
+  .news-page .optimization img {
+    width: 75%;
+    left: 30px;
+    bottom: 48px; }
+  .news-page .operation img {
+    width: 60%;
+    left: 36px;
+    bottom: 55px; }
+
+
+
+
+
+/*케이스 스터디*/
+.case-study article {
+  padding: 150px 0 132px 0; }
+
+.case-study h3 {
+  font-weight: normal;
+  font-size: 22px;
+  color: #1670b2;
+  padding: 15px 0 2px 0;
+  border-bottom: 1px solid #1670b2;
+  margin-bottom: 20px;
+  letter-spacing: -1px; }
+  @media (max-width: 450px) {
+    .case-study h3 {
+      font-size: 15.4px; } }
+
+.case-study .description-result {
+  font-size: 40px;
+  line-height: 1.2em;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #41434a;
+  letter-spacing: -1px;
+  max-width: 75%; }
+  @media (max-width: 450px) {
+    .case-study .description-result {
+      font-size: 28px; } }
+  @media (max-width: 620px) {
+    .case-study .description-result {
+      padding-bottom: 15px; } }
+
+.case-study .description-detail {
+  font-size: 20px;
+  color: #41434a;
+  max-width: 80%;
+  margin-bottom: 60px;
+  line-height: 1.2em;
+  letter-spacing: -1.5px; }
+  @media (max-width: 620px) {
+    .case-study .description-detail {
+      margin-bottom: 30px; } }
+
+.case-study .page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .case-study .page h3 {
+    padding-top: 0; }
+
+.case-study .bank-page {
+  }
+
+.case-study .diet-page {
+  background-color:#333; 
+  padding: 100px 0 62px 0;}
+  .case-study .diet-page .description-result,
+  .case-study .diet-page .description-detail {
+    color: white; }
+  .case-study .diet-page h3 {
+    color: #ffc600;
+    border-color: #ffc600; }
+
+.case-study img {
+  width: 600px; }
+
+.case-study .motor-page {
+  /* background-image: url(../resource/img/back02.jpg); } */ 
+background-color:#f2f2f2;
+
+}
+/* 1분만에 문의하기 */
+.contact {
+  position: relative;
+  background-color : #f2f2f2;
+  padding: 62.98px 0 103.18px 0; }
+  .contact .contact-form {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    max-width: 804px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 56.28px 54.94px 65.66px 53.6px; }
+    @media (max-width: 620px) {
+      .contact .contact-form {
+        padding: 60px 10px 40px 10px; } }
+  .contact .btn-submit {
+    width: 337px;
+    height: 98px;
+    font-size: 28px;
+    letter-spacing: -1.3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: #41434a;
+    font-weight:bold;
+    background: #ffc600;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1358a2', endColorstr='#29b0c5', GradientType=0);
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    margin-top: 54.94px;
+    width: 225.79px;
+    height: 65.66px;
+    font-size: 20.77px; 
+    border : 0px;     }
+    .contact .btn-submit:active {
+      box-shadow: none;
+      position: relative;
+      top: 2px; }
+    @media (max-width: 450px) {
+      .contact .btn-submit {
+        width: 225px;
+        height: 70px; } }
+    @media (max-width: 620px) {
+      .contact .btn-submit {
+        margin-top: 30px; } }
+  .contact h3 {
+    font-size: 26.8px;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom : 20px; }
+    .contact h3 span {
+       }
+    @media (max-width: 620px) {
+      .contact h3 {
+        margin-bottom: 15px; } }
+  .contact legend {
+    font-size: 16.08px;
+    padding: 16.75px 0 3.35px 0;
+    font-weight: bold;
+    color: #41434a; }
+  .contact input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 51.992px;
+    padding: 0px 13.4px;
+    margin: 4.02px 0;
+    font-size: 15.41px;
+    border-radius: 4.02px;
+    background-color: white;
+    border: 0px;
+    border-bottom : solid 1px #dedede;
+
+
+  } 
+
+    .contact input::-webkit-input-placeholder, .contact input::-moz-placeholder, .contact input:-ms-input-placeholder, .contact input:-moz-placeholder {
+      color: #999;
+      letter-spacing: -1px; }
+    @media (max-width: 620px) {
+      .contact input {
+        font-size: 14px;
+        height: 40px;
+        margin: 6px 0; } }
+  @media (max-width: 620px) {
+    .contact {
+      padding-top: 0;
+      padding-bottom: 10px; } }
+
+/*네비게이션 break*/
+@media (max-width: 620px) {
+  header nav {
+    height: 70px;
+    overflow: hidden;
+    flex-wrap: wrap; }
+  header .menus {
+    order: 3;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-left: 0px; }
+  header .menu {
+    min-width: 100%; }
+  header .menu::after {
+    content: ""; }
+  header .mobile-menu-btn {
+    margin-right: 5px; }
+  header .mobile-menu-btn button {
+    display: block; }
+  header nav.open {
+    height: auto; } }
+
+@media (max-width: 450px) {
+  .page {
+    padding: 30px 10px;
+    text-align: center;
+    flex-flow: column; }
+  .page.network-page {
+    padding-top: 100px; }
+  .page.ad-page {
+    padding-top: 50px; }
+  .page.title-page {
+    padding-bottom: 70px; }
+  .page.benefits-page {
+    padding-top: 60px; }
+  .page.news-page {
+    padding-top: 60px; }
+  .title-page .iframe-wrap {
+    margin-bottom: 0;
+    width: calc(100% + 20px);
+    padding-bottom: calc(56.2%); }
+  .title-page .description {
+    padding-bottom: 40px; }
+  .page.ad-page .left {
+    padding-right: 0;
+    padding-bottom: 0; }
+  .page.ad-page img {
+    padding: 0; }
+  .case-study img {
+    width: 90%; }
+  .one-news {
+    width: 80%;
+    padding-bottom: 150px; 
+    cursor: pointer; } }
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* footer 추가 */
+
+.footer {
+  background-color : #41434A;
+  color : #eeeeee;
+}
+.footer .company-info {
+}
+.footer .address {
+  text-align : left;
+}
+
+.footer .opening-hour {
+  text-align : left;
+}

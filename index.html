@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="./statics/css/reset.css">
+    <link rel="stylesheet" href="./statics/css/style.css">
+    <link rel="stylesheet" href="./statics/css/slider.css">
+    <meta charset="UTF-8">
+    <title>인공지능 개인화 상품 추천 | 카라멜AI</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+
+    <meta name="naver-site-verification" content="1a31634cd3f68dca13eabec0ba4a791ec31e4704">
+    <meta name="google-site-verification" content="-QMnR_Sriqs4_AfsJk3oCVmXFOABNTJknUSp8ETAi3I">
+
+    <meta name="title" content="인공지능 개인화 상품 추천 | 카라멜AI">
+    <meta name="description" content="국내 최고 인공지능을 통한 개인화 추천을 통해, 사이트 방문자를 늘리고 구매 고객으로 전환시켜 매출을 높이세요.">
+    <meta property="og:title" content="인공지능 개인화 상품 추천 | 카라멜AI">
+    <meta property="og:description" content="국내 최고 인공지능을 통한 개인화 추천을 통해, 사이트 방문자를 늘리고 구매 고객으로 전환시켜 매출을 높이세요.">
+    <meta name="keywords" content="개인화 추천, 추천 솔루션, 쇼핑몰 솔루션, 추천 시스템, 카라멜ai, 데이블, 레코픽, 레코벨, 메이크샵, 카페24, 고도몰">
+    <meta property="og:image" content="https://karamel.ai/i/og_image.png">
+    <link rel="canonical" href="https://karamel.ai/">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./statics/js/jquery.serializeObject.min.js"></script>
+    <!--script src=".../statics/send_to_google_form.js"></script-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64397972-11"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-64397972-11');
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="http://karamel.ai" class="logo">
+                <img src="http://karamel.ai/i/logo_s.png" alt="카라멜 로고">
+            </a>
+            <ul class="menus">
+                <li class="menu"><a href="http://karamel.ai/">HOME</a></li>
+                <li class="menu"><a href="http://dable.io/ko/about/">ABOUT</a></li>
+                <li class="menu"><a href="http://dable.io/ko/careers/">CAREER</a></li>
+                <li class="menu"><a href="#contact-form">CONTACT</a></li>
+                <li class="menu"><a href="https://admin.karamel.ai/" style="color:#ffc600;">DASHBOARD</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <button></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-dable">
+
+        <div class="about-dable-background">
+            <article class="page network-page">
+                <div class="left">
+                    <h3>모두 다른 고객,<br>같은 상품을 보고있나요?</h3>
+                    <p class="description">100만명의 고객은 100만개의 관심사를 갖고 있습니다.
+                        <br>카라멜 추천 솔루션을 통해,
+                        <br>100만 고객의 관심사에 맞는 상품을 노출하세요. </p>
+                    <a class="form-shortcut deck-download" href="https://drive.google.com/file/d/1zFH4TiqeveoQN2OkDE6909M7Oe9kCR7a/view?usp=sharing" target="_blank"><span>Karamel.ai 소개서</span></a>
+                    <a class="form-shortcut test-apply-shortcut" href="#contact-form"><span>무료테스트 신청</span></a>
+                </div>
+                <img class="right" src="./statics/img/main1.jpg" alt="">
+            </article>
+
+            <!-- 두번째 아티클 -->
+            <article class="page ad-page">
+                <img src="./statics/img/main2.png">
+                <div class="left">
+                    <h3>맞춤상품을 보여주고 고객을 붙잡으세요</h3>
+                    <p class="description">카라멜은 고객의 관심사에 맞는 제품을 추천하여 더 많은 상품을 보고 구매할 수 있게 합니다</p>
+                    <span class="button">상품클릭률 6배 상승!</span>
+                </div>
+
+            </article>
+
+            <article class="page network-page" style="background-color:white;">
+
+                <div class="left">
+                    <h3>최적화된<br> 추천 알고리즘 제공</h3>
+                    <p class="description">카라멜 솔루션은 쇼핑몰의 각 단계마다 최적화된 알고리즘으로 상품을 보여줍니다.
+                        <br>
+                        <br>우수한 효과를 인정받아 난닝구, 조군샵, 아이디어스, 데코뷰 등 다양한 커머스 업체에서 장기간 사용하고 있습니다.</p>
+                    <span class="button">1,800개 제휴사 사용중</span>
+                </div>
+                <div id="slider">
+                    <a href="javascript:;" class="control_next">></a>
+                    <a href="javascript:;" class="control_prev">
+                        <</a>
+                            <ul>
+                                <li><img src="./statics/img/reference1.jpg"></li>
+                                <li><img src="./statics/img/reference2.jpg"></li>
+                                <li><img src="./statics/img/reference3.jpg"></li>
+                            </ul>
+                </div>
+
+                </article>
+
+                <article class="page benefits-page">
+                    <h3>설치는 편리하게, 효율은 섬세하게</h3>
+                    <ul class="benefits">
+                        <li class="benefit network">
+                            <h4>편리한 설치</h4>
+                            <p>SasS 방식을 통해 백엔드개발 / DB연동 없이 설치가능.
+                                <br>호스팅 쇼핑몰 이용시 설치대행 지원합니다</p>
+                            <img src="./statics/img/good1.jpg">
+                        </li>
+                        <li class="benefit targetting">
+                            <h4>자동 최적화</h4>
+                            <p>머신러닝을 통해 추천상품의 효율을 분석하고 자동으로 성과 개선합니다</p>
+                            <img src="./statics/img/good2.jpg">
+                        </li>
+                        <li class="benefit optimization">
+                            <h4>AB 테스트</h4>
+                            <p>더욱 고객을 이끄는 문구, 디자인, 알고리즘이 무엇인지 AB테스트를 통해 확인 및 성과 개선 가능</p>
+                            <img src="./statics/img/good3.jpg">
+                        </li>
+
+                    </ul>
+                </article>
+
+        </div>
+    </section>
+
+    <section class="case-study">
+        <article class="page motor-page">
+
+            <p class="description-result">타사 대비 우수한, 검증된 추천 효율</p>
+            <p class="description-detail">타 솔루션에 비해 2배 이상의 퍼포먼스를 자랑</p>
+            <img src="./statics/img/effect1.png">
+        </article>
+        <article class="page diet-page">
+            <h3>실시간 데이터 분석</h3>
+            <p class="description-result"><strong data-logs="16050806156" data-log-per-second="555" class="log__count">16,040,812,558</strong></p>
+            <br>
+            <br>
+            <p class="description-detail">1,800개 고객사, 월 160억 데이터 분석</p>
+            </p>
+
+        </article>
+        <!--article class="page bank-page">
+      <h3>P2P 금융사 브랜딩 캠페인</h3>
+      <p class="description-result">신규 방문자 비율 약 90%</p>
+      <p class="description-detail">글로벌 AD NETWORK 대비 약 30% 수준의 고객 전환 비용</p>
+      <img src="./resource/img/case03.png" alt="">
+    </article-->
+    </section>
+
+    <section class="about-dable">
+
+        <article class="page news-page">
+            <h3>보도자료</h3>
+            <ul class="news">
+                <li class="one-news network" onclick="location.href='https://www.venturesquare.net/790246'">
+                    <h4>데이블 “MBC와 파트너십, 개인화 콘텐츠 추천 솔루션 제공”</h4>
+                    <p>데이블은 빅데이터 및 개인화 기술을 바탕으로 사용자들이 소비한 콘텐츠를 실시간으로 분석하여, 고품질 개인 맞춤형 콘텐츠를 추천하는 기술 기반 스타트업이다.</p>
+                    <img src="./statics/img/news1.jpg">
+                </li>
+                <li class="one-news targetting" onclick="location.href='https://www.thebell.co.kr/free/content/ArticleView.asp?key=201908060100011140000698&lcode=00'">
+                    <h4>[VC 투자기업]데이블, 잇단 VC 러브콜…시리즈C·IPO '고민'</h4>
+                    <p>성장한 데이블이 연내 시리즈C 투자 유치와 기업공개(IPO)를 두고 고민이 커지고 있다. 벤처캐피탈의 높은...</p>
+                    <img src="./statics/img/news2.jpg">
+                </li>
+                <li class="one-news optimization" onclick="location.href='http://www.etnews.com/20190307000237?m=1">
+                    <h4>[미래기업포커스]데이블, '카라멜'로 소셜커머스 진출</h4>
+                    <p>데이블(대표 이채현)이 올해 하반기에 개인화 추천 서비스 '카라멜'을 내놓고 커머스 시장 계획을 발표했다. 카라멜은 자체 개발한 알고리즘을 활용해 효율적인 맞춤 상품/광고를 지원하는 솔루션이다</p>
+                    <img src="./statics/img/news3.jpg">
+                </li>
+                <li class="one-news operation" onclick="location.href='https://m.sedaily.com/NewsVIew/1L56HS65SG'">
+                    <h4>개인 맞춤형 콘텐츠 추천 '데이블', 온라인광고대상 최우수상</h4>
+                    <p>개인화 콘텐츠 추천 플랫폼 데이블이 지난 8일 서울 푸르지오 밸리에서 열린 ‘2016 대한민국 온라인광고대상’ 시상식에서 최우수상(한국인터넷진흥원장상)을 수상했다. </p>
+                    <img src="./statics/img/news4.jpg" alt="">
+                </li>
+
+            </ul>
+        </article>
+    </section>
+
+    <section class="contact">
+        <form id="contact-form" class="contact-form">
+            <h3><span>3개월 무료테스트 신청</span></h3>
+            <fieldset>
+                <legend>커머스 정보 입력</legend>
+                <input type="text" placeholder="쇼핑몰 이름" name="shop_name" title="쇼핑몰 이름">
+                <input type="text" placeholder="쇼핑몰 도메인" name="shop_domain" title="쇼핑몰 도메인" required="">
+            </fieldset>
+            <fieldset>
+                <legend>담당자</legend>
+                <input type="text" placeholder="담장자님 성함" name="contact_name" title="성함" required="">
+                <input type="email" placeholder="이메일 주소" name="contact_email" title="이메일" required="">
+                <input type="tel" placeholder="전화번호" name="contact_phone" title="휴대전화" required="">
+            </fieldset>
+            <fieldset>
+                <legend>기타 문의</legend>
+                <input type="text" placeholder="궁금하신 내용이 있다면 적어주세요" name="contact_ask" title="추가 문의사항을 입력해 주세요">
+            </fieldset>
+            <button type="submit" class="btn-submit" id="submit_form">무료테스트 신청</button>
+        </form>
+    </section>
+    <section class="footer">
+        <div class="page company-info">
+
+            (주)데이블 서울특별히 강남구 테헤란로 26길 14, 8층 (우06236) 사업자등록번호 765-88-00046 대표자 이채현
+            <br>
+            <br> Tel : 070-8265-3338 / Email : karamel@dable.io / https://dable.io
+
+        </div>
+        </article>
+    </section>
+
+    <script>
+        //모바일에서 메뉴 열고닫기
+        $('.mobile-menu-btn button').on('click', function(e) {
+            $(e.target).parent().parent().toggleClass('open');
+            $(e.target).toggleClass('open');
+        });
+        //덱 다운로드 클릭 트래킹
+        $('.deck-download').on('click', function() {
+            gtag('event', 'button', {
+                'event_category': 'Karamel',
+                'event_action': 'RecoDeckDownload'
+            });
+            return true;
+        });
+        //테스트 지원 쇼트컷 클릭
+        $('.test-apply-shortcut').on('click', function() {
+            gtag('event', 'button', {
+                'event_category': 'Karamel',
+                'event_action': 'ShortcutTestApply'
+            });
+            return true;
+        });
+        //테스트 제출 버튼 클릭
+        $('.btn-submit').on('click', function() {
+            gtag('event', 'button', {
+                'event_category': 'Karamel',
+                'event_action': 'SubmitTestApply'
+            });
+            return true;
+        });
+        //레퍼런스 이전 버튼 
+        $('.control_prev').on('click', function() {
+            gtag('event', 'button', {
+                'event_category': 'Karamel',
+                'event_action': 'ReferencePrevBtn'
+            });
+            return true;
+        });
+        //레퍼런스 다음 버튼
+        $('.control_next').on('click', function() {
+            gtag('event', 'button', {
+                'event_category': 'Karamel',
+                'event_action': 'ReferenceNextBtn'
+            });
+            return true;
+        });
+    </script>
+
+    <!-- 분석 로그데이터 증가 -->
+    <script src="./statics/js/logdata.js"></script>
+    <!-- 슬라이더 with jquery -->
+    <script src="./statics/js/slider.js"></script>
+    <script>
+        var $form = $('form#contact-form'),
+            url = 'https://script.google.com/macros/s/AKfycbwqXqRLpjd-uwBx_ByWhwCfEwibwZYxlh2tl4uLg4muy7nPXRbn/exec'
+
+        $('#submit_form').on('click', function doGet(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+    alert('신청이 완료되었습니다. 담당자가 곧 연락을 드릴 예정입니다.')
+  );
+})
+    </script>
+
+
+</body>
+
+</html>
